@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NavBar</title>
+    </head>
+
+    <body>
+
+        <div class="topnav">
+        <h2 id="name">Saptanil</h2>
+        <a href="#home" class="home"> &lt; Home &gt; </a>
+        <a href="Project.html"> Projects</a>
+        <a href="About.html">About</a>
+        <a href="#Contact">Contact</a>
+        
+        </div>
+        
+        <div class="bg_img">
+          <img src="vs_code.png">
+          
+        </div>
+        
+        <section class ="home-section">
+        <h1 class="hero-heading">Hi I am Saptanil <br>Chowdhury</h1>
+        <img src="passport_pic.jpg" class="hero-img">
+        </body>
+        </section>
+
+    <style>
+
+        .bg_img{
+            background-image: url('vs_code.png'); 
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+    
+            
+        }
+
+        body::-webkit-scrollbar
+        {
+            width:10px;
+        }
+
+        body::-webkit-scrollbar-track
+        {
+            background: orange;
+        }
+
+        body::-webkit-scrollbar-thumb
+        {
+            background-color: cyan;
+            border-radius: 10px;
+            border: 1px solid greenyellow;
+        }
+
+        body::-webkit-scrollbar-thumb:hover
+        {
+            background: blue;
+        }
+
+        
+        .topnav {
+  background-color: black;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  left:0;
+  display: flex;
+  text-align: center;
+}
+
+#name{
+    color: white;
+    margin-right: 290px;
+    font-style: italic;
+    font-size: 50px;
+    
+}
+
+*{
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+}
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
+
+
+
+h1{
+    color:black;
+}
+
+.home-section
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 140px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 45px;
+    transition: 2s;
+
+}
+
+.hero-heading{
+    position: absolute;
+    font-size: 80px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color:white;
+    border-right: 20px;
+    
+}
+
+.hero-heading:hover
+{
+    font-size: 86px;
+}
+
+.hero-img{
+    position: absolute;
+    right: 0;
+    height: 70vh;
+    width:60vh;
+    opacity: 0.2;
+
+}
+
+.hero-img
+{
+
+}
+
+a:hover{
+    color:gray;
+}
+
+.home{
+    opacity: 0;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    
+    
+}
+
+
+.project-heading
+{
+    text-align: center;
+}
+
+.project-info
+{
+    display: flex;
+}
+
+
+
+.project-card
+{
+    border: 1px outset white;
+    text-align: center;
+    height: 200px;
+    display: relative;
+    border-radius: 10px;
+    
+    
+   
+    
+
+}
+
+.project-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+
+
+.project-heading
+{
+    font-size: 100px;
+    background-color: black;
+    color:blue;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+    text-align: center;
+    margin-bottom: 100px;
+    display: grid;
+    font-style: italic;
+    
+    
+    
+}
+
+.project-heading:hover
+{
+    font-size: 108px;
+
+}
+
+
+
+.project-img
+{
+    width: 120px;
+    height: 50px;
+    opacity: 0;
+    
+}
+
+.project-content 
+{
+    position: relative;
+    padding: 40px;
+    color: white;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.project-card:hover .project-content{
+    opacity: 1;
+}
+
+.project-card:hover .project-img{
+    opacity: 1;
+}
+
+
+        .img{
+            width: 100px;
+            height: 110px;
+        }
+
+        .about{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30% 60%;
+            grid-gap: 40%;
+            height: 10%;
+            border: #000;
+            border-style: dotted;
+        }
+
+        .about-img-container
+        {
+            position: relative;
+            height: 300px;
+        }
+
+        .about-img{
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+            border-color: black;
+            border-style: dashed;
+            padding: 25px;
+            border-radius: 50%;
+        }
+
+        .download-cv-btn
+        {
+            position: relative;
+            bottom: 35px;
+            left: 8px;
+        }
+
+        .project-heading2{
+            text-align: center;
+            font-size: 40px;
+            font-style: italic;
+        }
+
+        .logo-container
+        {
+            display: flex;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 400px;
+        }
+
+        .logo-container2
+        {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 5px;
+           
+        }
+
+        
+
+        
+
+
+
+
+</style>
+
+
+
+
+
+<h1 class="project-heading">Some of my Projects</h1>
+
+
+
+<div class="project-container">
+    
+    
+    
+    <div class="project-card">
+        <img src="Django_Image.jpeg" alt="image section" class="project-img">
+        <div class="project-content">
+           <h2 class="project-title">01</h2>
+            <p class="project-info"><center>Image and Resume Uploader using Python Django.</center></p>
+            
+            </div>
+        </div>
+
+    <div class="project-card">
+        <img src="react_js.png" alt="image section" class="project-img">
+        <div class="project-content">
+            <h2 class="project-title">02</h2>
+            <p class="project-info"><center>React Gallery Application</center></p>
+          
+        </div>
+    </div>
+
+    <div class="project-card">
+        <img src="node_js.jpg" alt="image section" class="project-img">
+        <div class="project-content">
+            <h2 class="project-title">03</h2>
+            <p class="project-info"><center>Portfolio app using Node js.</center></p>
+           
+        </div>
+    </div>
+    
+    <div class="project-card">
+        <img src="angular_js.png" alt="image section" class="project-img">
+        <div class="project-content">
+            <h2 class="project-title">04</h2>
+            <p class="project-info"><center>Admin Panel Framework using Angular Js.</center></p>
+          
+        </div>
+    </div>
+
+    <section class="about-section">
+        <div class="about">
+            <div class="about-img container">
+                <img src="passport_pic.jpg" alt="my photo" class="img">
+                <a href="Saptanil Chowdhury_TIU.docx" download="Resume">
+                    <button class="download-cv-btn">Download CV</button>
+                </a>
+            </div>
+            <p class="about=info">My name is Saptanil Chowdhury. I am from Kolkata. 
+                Currently, I am working in  Infosys as a Python Django Web Developer. I have expertise in Frontend Web 
+                Development. I have been in Infosys since more than 7 months. I have also attended training in HCL for 1 month
+                before joining Infosys.
+            </p>
+        </div>
+
+        <h1 class="project-heading2">Skills</h1>
+        <div class="logo-container">
+            <div class="project-card">
+                <img src="html.jpg" alt="image section" class="logo-img">
+            </div>
+ 
+        
+         <div class="project-card">
+             <img src="css3.png" alt="image section" class="logo-img">
+         </div>
+ 
+         <div class="project-card">
+             <img src="js.png" alt="image section" class="logo-img">
+         </div>
+     </div>
+ 
+     <div class="logo-container2">
+         <div class="project-card">
+             <img src="node_js.png" alt="image section" class="logo-img">
+         </div>
+ 
+     
+         <div class="project-card">
+             <img src="react.png" alt="image section" class="logo-img">
+         </div>
+     </div>
+
+
+    </section>
+
+    
+
+    
+
+
+</body>
+</html>
+
+
+
+
